@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/42lmx4xhnmpd1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container{
+    background: rgb(240, 240, 240);
+    padding: 35px;
+    border-radius: 15px;
+    width: 340px;
+    box-shadow: 0px 10px 25px rgb(255, 0, 0);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.02);
+}
+
+h1{
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: white;
+    background: linear-gradient(90deg, #0011ff, #ff0000);
+    padding: 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #000000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#ff0000,#010dff);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(11, 11, 11, 0.2);
+}
