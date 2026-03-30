@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-image: url(img/42lmx4xhnmpd1.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0px 15px 35px rgba(255, 0, 0, 0.4);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.container-atletas {
+    width: 520px; 
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(90deg, #010dff, #ff0000);
+    padding: 14px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #111;
+    margin: 20px 0 10px;
+    text-align: left;
+    border-bottom: 2px solid #010dff;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #010dff;
+    box-shadow: 0 0 10px rgba(1, 13, 255, 0.3);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff0000, #010dff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+}
+
+.btn-secondary {
+    background: #000000;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alternar-link {
+    color: #010dff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+.row div {
+    flex: 1;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.user-list {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.user-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border-left: 6px solid #ff0000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-item h3 {
+    margin: 0 0 5px 0;
+    color: #010dff;
+    font-size: 16px;
+}
+
+.user-item p {
+    margin: 3px 0;
+    color: #666;
+    font-size: 13px;
+}
+
+.btn-delete {
+    background: #ff0000;
+    width: auto;
+    padding: 8px 12px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none !important;
+}

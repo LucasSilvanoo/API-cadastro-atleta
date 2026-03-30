@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="caixa-login" class="container">
+        <h1>Entrar</h1>
+        <form id="form-login">
+            <label>E-mail</label>
+            <input type="email" id="login-email" placeholder="Seu e-mail" required>
+
+            <label>Senha</label>
+            <input type="password" id="login-senha" placeholder="Sua senha" required>
+
+            <button type="submit">Acessar Painel</button>
+        </form>
+        <span onclick="alternarTelas('cadastro')" class="alternar-link">Não tem conta? Cadastre-se</span>
+    </div>
+
+    <div id="caixa-cadastro" class="container hidden">
+        <h1>Nova Conta</h1>
+        <form id="form-cadastro">
+            <label>Nome Completo</label>
+            <input type="text" id="cad-nome" placeholder="Seu nome" required>
+
+            <label>E-mail</label>
+            <input type="email" id="cad-email" placeholder="Seu e-mail" required>
+
+            <label>Senha</label>
+            <input type="password" id="cad-senha" placeholder="Crie uma senha" required>
+            <span id="erro-senha" class="hidden" style="color: #ff0000; font-size: 12px;">Mínimo 6 caracteres!</span>
+
+            <button type="submit">Salvar e Entrar</button>
+        </form>
+        <span onclick="alternarTelas('login')" class="alternar-link">Já tem conta? Faça Login</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

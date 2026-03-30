@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Atletas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container container-atletas">
+        <h1>Registrar Atleta</h1>
+
+        <form id="form-atleta">
+            <label>Nome Completo</label>
+            <input type="text" id="atleta-nome" placeholder="Nome do jogador" required>
+
+            <label>CPF</label>
+            <input type="text" id="atleta-cpf" placeholder="000.000.000-00" required>
+
+            <div class="row">
+                <div>
+                    <label>Modalidade</label>
+                    <input type="text" id="atleta-modalidade" placeholder="Ex: Futebol" required>
+                </div>
+                <div>
+                    <label>Categoria</label>
+                    <input type="text" id="atleta-categoria" placeholder="Ex: Sub-17" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label>Gênero</label>
+                    <select id="atleta-genero" required>
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Peso (kg)</label>
+                    <input type="number" id="atleta-peso" step="0.1" placeholder="Ex: 70.5" required>
+                </div>
+                <div>
+                    <label>Altura (m)</label>
+                    <input type="number" id="atleta-altura" step="0.01" placeholder="Ex: 1.75" required>
+                </div>
+            </div>
+
+            <button type="submit">Salvar Atleta</button>
+        </form>
+
+        <hr>
+
+        <h2>Atletas Inscritos</h2>
+        <div class="user-list" id="caixa-atletas">
+            </div>
+
+        <button type="button" id="btn-deslogar" class="btn-secondary">Deslogar da Conta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
